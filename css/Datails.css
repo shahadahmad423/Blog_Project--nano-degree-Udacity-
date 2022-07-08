@@ -1,0 +1,135 @@
+
+/*---------------------------------------details---------------------------------------------*/
+
+.details{
+    width: 90%;
+    display: grid;
+
+    margin: 5px auto;
+    grid-gap:5px;
+    grid-template-columns: 285px 1fr;
+    grid-template-areas: 
+    "top top top  top top top"
+    "left right  right right right right";
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.top{
+   grid-area: top;
+   background-color: black;
+   color: var(--main-color);
+   text-align: center;
+}
+
+.top > p{
+   text-align: end;
+   margin-bottom: 5px;
+   color: var(--main-color);
+   padding-right: 10px;
+}
+
+.left{
+   grid-area: left;
+   background-color:var(--main-color-alt);
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin: 5px;
+   border:10px solid var(--main-color);
+   outline: 1px solid rgb(0, 0, 0); 
+}
+.right{
+   grid-area: right;   
+   background-color: var(--main-color-alt);
+   margin: 5px;
+   border:10px solid var(--main-color);
+   outline: 1px solid rgb(0, 0, 0);
+}
+
+.photo{
+    width: 90%;
+    border: solid;
+    margin: 20px auto;
+}
+
+.center{
+    margin: 20px 20px; 
+}
+.center2{
+    display: none; 
+ }
+.center3{
+    margin: 20px 20px; 
+}
+.center>p{
+    text-align: left;
+}
+
+.bold{
+    font-weight: bold;
+    text-decoration: underline;
+       padding: 3px;
+    margin:3px;
+}
+
+.center .a{
+    text-align: left;
+    display: flex;
+ 
+}
+
+.center> img{
+    padding-bottom: 30px;
+}
+
+
+
+.flex{
+    display: flex;
+
+}
+
+.flex img{
+    width: 50px;
+    height: 50px;
+    margin: 2px 2px;
+}
+
+.personal-info{
+margin-left: 4px;
+}
+
+.aa{
+display: flex;
+}
+
+figcaption{
+    text-align: center;
+}
+
+/*---------------------------------------Small screen---------------------------------------------*/
+
+@media(max-width:767px){
+    .details{
+        grid-template-areas: 
+        "top  top "
+        "left left "
+        "right right";
+    }
+    .center{
+       display: none;
+    }
+    .center2{
+       display:block;
+    }
+    .left{
+   
+       justify-content: left;
+       text-align: left;
+       padding-bottom:6px;
+   }
+}
+/*---------------------------------------The End---------------------------------------------*/
+
+

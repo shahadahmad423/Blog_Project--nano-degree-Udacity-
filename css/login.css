@@ -1,0 +1,75 @@
+.black{
+     background-color: black; 
+}
+.grid{
+     display: grid;
+     margin: 50px auto;
+     height :70vh;
+     grid-template-areas: 
+     "login"
+     "user"
+     "pass"
+     "button";	  
+}
+button{
+     width: 100%;
+ 
+     grid-area: button;
+     background-color:#D7DFCA;;
+}
+.login{
+    grid-area: login;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 4px;
+    color:#D7DFCA; 
+}
+.username{
+    grid-area: user;	
+}
+
+input {
+    width: 98%;
+    height: 30%;
+    margin-top: 8px;
+
+}
+.passward{
+    grid-area: pass;
+}
+form{
+    height :80vh;	
+    width: 40%;
+    background-color: black;
+    margin:0px auto;
+    padding: 50px 35px;
+    font-family: 'Poppins',sans-serif;
+    color:  #D7DFCA;
+}
+
+.forget{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 50px; 
+}
+
+.forget > a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media(max-width:768px){
+    form{
+     height:500px;
+     width: 70%;
+    }
+
+    .forget{
+     flex-direction: column;
+     gap: 10px;
+     padding-top: 20px;
+    }
+}
